@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Basics - FutureCS</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="topic-style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="topic-header">
+    <div class="terminal-window">
+      <div class="terminal-header">[ TOPIC_LOADED ]</div>
+      <div class="terminal-content">
+        <h1>== Programming_Basics ==</h1>
+        <p>Master fundamental programming concepts and syntax</p>
+        <div class="ascii-art">
+          &lt;/&gt;
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="overview" class="overview-section">
+    <div class="section-header">
+      <h2>[ OVERVIEW ]</h2>
+    </div>
+    <div class="terminal-box">
+      <p>> Programming is the process of creating instructions for computers to follow.</p>
+      <p>> It forms the foundation of all software development and is essential for solving complex problems.</p>
+      <p>> In this module, you will learn core programming concepts that apply across all languages.</p>
+    </div>
+  </section>
+
+  <section id="topics" class="topics-section">
+    <div class="section-header">
+      <h2>[ KEY_TOPICS ]</h2>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Variables & Data Types
+        <span class="tooltip">Store and manipulate different kinds of information</span>
+      </div>
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Conditionals (if/else)
+        <span class="tooltip">Make decisions in your code based on conditions</span>
+      </div>
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Loops (for/while)
+        <span class="tooltip">Repeat actions efficiently without duplicating code</span>
+      </div>
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Functions
+        <span class="tooltip">Create reusable blocks of code that perform specific tasks</span>
+      </div>
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Input/Output
+        <span class="tooltip">Get information from users and display results</span>
+      </div>
+      <div class="checklist-item">
+        <span class="checkbox">[X]</span> Basic Debugging
+        <span class="tooltip">Find and fix errors in your programs</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="code-example" class="code-section">
+    <div class="section-header">
+      <h2>[ CODE_EXAMPLE ]</h2>
+    </div>
+    <div class="code-window">
+      <div class="code-header">
+        <span>python_basics.py</span>
+      </div>
+      <pre class="code-content">
+# Variables and data types
+name = "User"
+age = 25
+is_programmer = True
+
+# Conditional statement
+if age >= 18:
+    status = "adult"
+else:
+    status = "minor"
+
+# Function definition
+def greet(person_name):
+    return f"Hello, {person_name}!"
+
+# Loop example
+print("Counting to 5:")
+for i in range(1, 6):
+    print(i)
+
+# Function call with input
+message = greet(name)
+print(message)
+      </pre>
+      <div class="code-footer">
+        <button class="run-button">> RUN_CODE</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning-path" class="path-nav">
+    <div class="nav-box prev">
+      <a href="index.html">[&lt;&lt; MAIN_DASHBOARD]</a>
+    </div>
+    <div class="nav-box quiz">
+      <a href="#quiz">[?? TAKE_QUIZ]</a>
+    </div>
+    <div class="nav-box next">
+      <a href="#data-structures">[DATA_STRUCTURES &gt;&gt;]</a>
+    </div>
+  </section>
+
+  <footer class="topic-footer">
+    <div class="progress-bar">
+      <span>PROGRESS: [███.......] 30%</span>
+    </div>
+    <div class="footer-nav">
+      <a href="index.html">[RETURN_TO_DASHBOARD]</a>
+    </div>
+  </footer>
+</body>
+</html>

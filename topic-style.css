@@ -1,0 +1,214 @@
+
+/* Topic-specific styles that complement the main style.css */
+
+.topic-header {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.topic-header .terminal-window {
+  margin: 0 auto;
+}
+
+.topic-header h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ascii-art {
+  font-size: 4em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.overview-section, .topics-section, .code-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.terminal-box {
+  border: 2px solid var(--border-color);
+  padding: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1.8;
+}
+
+.terminal-box p {
+  margin-bottom: 15px;
+}
+
+.checklist {
+  border: 2px solid var(--border-color);
+  padding: 20px;
+}
+
+.checklist-item {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.checklist-item:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: var(--border-color);
+  color: var(--bg-color);
+  padding: 5px 10px;
+  border-radius: 0;
+  font-size: 0.85em;
+  pointer-events: none;
+}
+
+.checklist-item:hover {
+  background: var(--border-color);
+  color: var(--bg-color);
+}
+
+.checklist-item:hover .tooltip {
+  opacity: 1;
+}
+
+.code-window {
+  border: 2px solid var(--border-color);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.code-header {
+  border-bottom: 2px solid var(--border-color);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.code-content {
+  padding: 20px;
+  white-space: pre;
+  overflow-x: auto;
+  line-height: 1.5;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.code-footer {
+  border-top: 2px solid var(--border-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.run-button {
+  background: none;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  padding: 8px 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.run-button:hover {
+  background: var(--border-color);
+  color: var(--bg-color);
+}
+
+.path-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.nav-box {
+  border: 2px solid var(--border-color);
+  padding: 10px 15px;
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.nav-box:hover {
+  background: var(--border-color);
+}
+
+.nav-box:hover a {
+  color: var(--bg-color);
+}
+
+.topic-footer {
+  border-top: 2px solid var(--border-color);
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.progress-bar {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .topic-header h1 {
+    font-size: 2em;
+  }
+  
+  .ascii-art {
+    font-size: 3em;
+  }
+  
+  .path-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tooltip {
+    display: none;
+  }
+  
+  .checklist-item:active .tooltip {
+    display: block;
+    position: static;
+    opacity: 1;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+}
