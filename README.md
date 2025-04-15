@@ -30,9 +30,9 @@ This version uses a **Retro UI** inspired by early terminal interfaces and vinta
    cd futurecs-navigator
    ```
  2. **Open in Browser Just open index.html in your browser**:
-```bash
-open index.html
-```
+   ```bash
+   open index.html
+   ```
 No build tools required. 100% HTML + CSS.
 
 🔧 Customization
